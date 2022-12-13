@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Comtech System - Login {% endblock %}
+
+{% block body %}
+
+<div>
+  {% with messages = get_flashed_messages() %}
+
+  {% if messages %}
+
+  {% for message in messages %}
+
+  
+
+</div>
+<div class="container">
+  <div class="alert alert-success alert-dismissable" role="alert">
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+
+        <span aria-hidden="true">x</span>
+
+    </button>
+
+
+{{message}}
+
+
+</div>
+
+
+{% endfor %}
+
+{% endif %}
+{% endwith %}
+</div>
+<form method="POST">
+    <div class="container h-80">
+      <div class="row d-flex justify-content-center align-items-center h-80">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-3 text-center">
+  
+              <div class="mb-md-1 mt-md-2 pb-1">
+  
+                <h4 class="fw-bold mb-2 text-uppercase">Log In First!</h4>
+                <p class="text-white-50 mb-2">Please enter your login and password!</p>
+  
+                <div class="form-outline form-white mb-2">
+                    {% if error %}
+                      <p class="error" style="color:rgb(255, 134, 134)"><strong>"Error:</strong> {{ error }}"</p>
+                    {% endif %}
+                  <input type="text" name="username" id="typeEmailX" class="form-control form-control-lg" />
+                  <label class="form-label" for="typeEmailX">User Name</label>
+                </div>
+  
+                <div class="form-outline form-white mb-2">
+                  <input type="password" name="password" id="typePasswordX" class="form-control form-control-lg" />
+                  <label class="form-label" for="typePasswordX">Password</label>
+                </div>
+  
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                <p class="mt-3">Powered by AYAN Tech! 
+                </p>
+  
+              </div>
+  
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+</div>
+
+
+
+{% endblock %}

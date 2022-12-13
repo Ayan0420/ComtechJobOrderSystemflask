@@ -1,0 +1,11 @@
+*** To save required libraries
+#install pipreqs
+pip install pipreqs
+
+#run
+python -m pipreqs.pipreqs
+
+
+*** To install requred libraries form requirements.txt
+
+pip install -r requirements.txt

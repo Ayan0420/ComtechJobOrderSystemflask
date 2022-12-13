@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} Comtech J.O. System {% endblock %}
+
+{% block body %}
+
+<div class="jumbotron p-1">
+    <div class="well well-sm text-center">
+        <table align="center">
+            <tr>
+                <td>
+                    <a href="{{url_for('dashboard')}}">
+                        <img src="{{url_for('static', filename='comtech_logo.jpg')}}" width="100" height="100"/>
+                    </a>
+                    
+                    
+                </td>
+                <td>
+                    <p style="font-size: 70%; padding-left: 80%;">"Prototype ver. 1"</p>
+                    <h1 class="px-5">Comtech Laptop Repair Job Order Manager</h1>
+                    <p>Powered by AYAN Tech</p>
+                    
+                </td>
+            </tr>
+
+
+
+        </table>
+        <!-- <img src="{{url_for('static', filename='comtech_logo.jpg')}}" align="top"/>
+        <h1>Welcome to Comtech Laptop Repaire Job Order Manager</h1> -->
+
+    </div>
+
+
+</div>
+
+
+
+
+{% endblock %}
