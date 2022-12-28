@@ -84,7 +84,7 @@ db.create_all()
 # Creating the login page
 
 #admin users credentials
-users = {"Comtech-Admin": ("null", "comtechjoborder123"), "Clark":("null", "password1234")}
+users = {"Admin": ("null", "password"), "user":("null", "password")}
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #login required wrapper this will authenticate the admin user
 import functools
